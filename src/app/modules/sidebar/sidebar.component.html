@@ -1,3 +1,15 @@
-<p>
-  sidebar works!
-</p>
+<ul class="sidebar-ul">
+    <li *ngFor="let group of menusList">
+        <a class="mgp">  {{group.group}} </a>
+        <ul>
+            <li *ngFor="let parent of group.Parent">
+                <a>{{parent.name}}</a>
+                <ul>
+                    <li *ngFor="let child of parent.children">
+                        <a>{{child.name}}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
