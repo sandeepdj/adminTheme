@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files
+   font-family: 'Rubik', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~variables.scss';
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: $bgcolor;
+    font-family: 'Rubik', sans-serif;
+}
+
+.page-title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}

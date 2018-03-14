@@ -1,0 +1,10 @@
+$white :#ffffff;
+$blue: #6673FC;
+$red:#E44F56;
+$bgcolor:#f4f6f9;
+
+/* Sidebar and container*/
+
+$swidth: 210px;
+$sheight:calc(100% - 56px);
+$cwidth: calc(100% - #{$swidth});
