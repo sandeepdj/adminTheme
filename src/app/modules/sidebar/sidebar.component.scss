@@ -1,6 +1,12 @@
 @import '~variables.scss';
+
+
 .sidebar-ul {
     padding: 0px;
+    list-style-type: none;
 }
 
-.mgp {}
+.mgp {
+  color: $blue1 !important;
+  font-weight: bold;
+}

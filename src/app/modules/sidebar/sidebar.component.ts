@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-   
+
   constructor() { }
 
   ngOnInit() {
@@ -15,10 +15,10 @@ export class SidebarComponent implements OnInit {
 
  menusList:any[]=[
 	{
-		"group": "Navigation",
-		"Parent": [
+
 			{
 				"name": "Dashboard",
+        "icon":"fa fa-home",
 				"children": [
 					{
 						"name": "DEFAULT"
@@ -32,7 +32,8 @@ export class SidebarComponent implements OnInit {
 				]
 			},
 			{
-				"name": "Widgets",
+        "name": "Widgets",
+        "icon":"fa fa-th",
 				"children": [
 					{
 						"name": "Statistics"
@@ -44,14 +45,14 @@ export class SidebarComponent implements OnInit {
 						"name": "Chart"
 					}
 				]
-			}
-		]
+
+
 	},
 	{
-		"group": "UI Elelemts",
-		"Parent": [
-			{
-				"name": "Basic",
+
+
+        "name": "Basic",
+        "icon":"fa fa-th-large",
 				"children": [
 					{
 						"name": "Alert"
@@ -71,7 +72,8 @@ export class SidebarComponent implements OnInit {
 				]
 			},
 			{
-				"name": "Advance",
+        "name": "Advance",
+        "icon":"fa fa-sync",
 				"children": [
 					{
 						"name": "Modal"
@@ -85,16 +87,14 @@ export class SidebarComponent implements OnInit {
 				]
 			},
 			{
-				"name": "Animations",
+        "name": "Animations",
+        "icon":"fa fa-sync",
 				"children": []
-			}
-		]
 	},
 	{
-		"group": "Forms",
-		"Parent": [
-			{
-				"name": "Form",
+
+        "name": "Form",
+        "icon":"fa fa-sync",
 				"children": [
 					{
 						"name": "Components"
@@ -108,20 +108,21 @@ export class SidebarComponent implements OnInit {
 				]
 			},
 			{
-				"name": "Form Picker",
+        "name": "Form Picker",
+        "icon":"fa fa-sync",
 				"children": []
 			},
 			{
-				"name": "Form Select",
+        "name": "Form Select",
+        "icon":"fa fa-sync",
 				"children": []
-			}
-		]
+
+
 	},
 	{
-		"group": "Tables",
-		"Parent": [
-			{
-				"name": "Bootstrap Tables",
+
+        "name": "Bootstrap Tables",
+        "icon":"fa fa-sync",
 				"children": [
 					{
 						"name": "Basic Table"
@@ -132,7 +133,8 @@ export class SidebarComponent implements OnInit {
 				]
 			},
 			{
-				"name": "Data Tables",
+        "name": "Data Tables",
+        "icon":"fa fa-sync",
 				"children": [
 					{
 						"name": "Basic Table"
@@ -141,8 +143,8 @@ export class SidebarComponent implements OnInit {
 						"name": "Paginig Table"
 					}
 				]
-			}
-		]
+
+
 	}
 ];
 
