@@ -1,16 +1,57 @@
-<header class="header">
-    <div class="container-fluid">
-        <div class="row">
-            <app-header></app-header>
-        </div>
-    </div>
-</header>
+<div class="container-fluid">
+    <div class="row">
+        <section class="page-container " [ngClass]="{ 'sidebar-open':sidebarOpen === true, 'sidebar-close':sidebarOpen === false 
+                  }">
+            <div class="sidebar-wrap  ">
+                <div class="sidebar-info">
+                    <div class="side-logo">
+                        <img src="assets/img/logo.png">
+                    </div>
+                    <div class="user-info">
+                        <img src="assets/img/avatar.jpg" class="user-photo">
+                    </div>
+                    <div class="details">
+                        <h4>Sandeep Jadhav</h4>
+                        <small>Software Developer</small>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <app-sidebar></app-sidebar>
+                </div>
+            </div>
+            <div class="container-wrap">
+                <header class="header">
+                    <div class="container-fluid">
+                        <div class="row header-icons">
+                            <div class="col-lg-1 col-md-1">
+                                <a class="top-logo" (click)="toggleSidebar()">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </a>
+                                <a class="fas fa-arrows-alt"></a>
 
-<section class="page-container full-view">
-    <div class="sidebar-wrap ">
-        <app-sidebar></app-sidebar>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="right-inner-addon">
+                                    <i class="fa fa-search"></i>
+                                    <input type="search" class="form-control" placeholder="Search" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                            </div>
+                            <div class="col-lg-3 col-md-3 right-icons">
+                                <a class="far fa-envelope"></a>
+                                <a class="far fa-bell"></a>
+                                <a class="fas fa-power-off"></a>
+                                <a class="fas fa-cog"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </header>
+                <section class="router-content">
+                    <app-dashboard></app-dashboard>
+                </section>
+            </div>
+        </section>
     </div>
-    <div class="container-wrap">
-        <app-dashboard></app-dashboard>
-    </div>
-</section>
+</div>

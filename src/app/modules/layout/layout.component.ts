@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
+  sidebarOpen:boolean = true;
+
   constructor() { }
 
   ngOnInit() {
   }
+
+ 
+
+  toggleSidebar(){
+    this.sidebarOpen = !this.sidebarOpen;
+    console.log( this.sidebarOpen);
+  }
+
+
 
 }
