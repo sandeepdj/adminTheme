@@ -1,8 +1,8 @@
 <div class="container-fluid">
     <div class="row">
-        <section class="page-container " [ngClass]="{ 'sidebar-open':sidebarOpen === true, 'sidebar-close':sidebarOpen === false 
+        <section class="page-container" [ngClass]="{ 'sidebar-open':sidebarOpen === true, 'sidebar-close':sidebarOpen === false
                   }">
-            <div class="sidebar-wrap  ">
+            <div class="sidebar-wrap">
                 <div class="sidebar-info">
                     <div class="side-logo">
                         <img src="assets/img/logo.png">
@@ -23,21 +23,17 @@
                 <header class="header">
                     <div class="container-fluid">
                         <div class="row header-icons">
-                            <div class="col-lg-1 col-md-1">
+                            <div class="col-lg-9 col-md-9">
                                 <a class="top-logo" (click)="toggleSidebar()">
                                     <i class="fas fa-exchange-alt"></i>
                                 </a>
                                 <a class="fas fa-arrows-alt"></a>
+                                <a class="title-name">
+                                  The Shivaji Public school
+                                </a>
+                            </div>
 
-                            </div>
-                            <div class="col-lg-2 col-md-2">
-                                <div class="right-inner-addon">
-                                    <i class="fa fa-search"></i>
-                                    <input type="search" class="form-control" placeholder="Search" />
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                            </div>
+
                             <div class="col-lg-3 col-md-3 right-icons">
                                 <a class="far fa-envelope"></a>
                                 <a class="far fa-bell"></a>

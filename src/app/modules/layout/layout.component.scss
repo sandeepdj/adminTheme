@@ -13,6 +13,9 @@
         width: $cwidth;
         margin-left: $swidth;
     }
+    .header{
+      width: $cwidth;
+    }
 }
 
 .sidebar-close {
@@ -24,11 +27,13 @@
         width: 0px;
         margin-left: 0px;
     }
+    .header{
+      width: $wh100;
+    }
 }
 
 .header {
     position: fixed;
-    width: $wh100;
     height: $headerHeight;
     background-color: $blue;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -118,35 +123,11 @@
 .header-icons {
     color: #fff;
 }
-
-.right-inner-addon {
-    position: relative;
-    padding-top: 6px;
+.title-name{
+  padding-top: 12px;
+  font-size: 20px;
 }
 
-.right-inner-addon input {
-    padding-right: 30px;
-    background: transparent;
-    border-color: #fff;
-    border-radius: 20px;
-    box-shadow: none;
-}
-
-.right-inner-addon i {
-    position: absolute;
-    right: 0px;
-    padding: 10px 12px;
-    pointer-events: none;
-    color: #818080;
-}
-
-.right-inner-addon input:focus {
-    background-color: #fff;
-}
-
-.right-inner-addon:focus .right-inner-addon i {
-    color: $blue !important;
-}
 
 .right-icons {
     text-align: right;

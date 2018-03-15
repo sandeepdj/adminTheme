@@ -7,135 +7,149 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  openMe:string;
+  openMe1:boolean = true;
   constructor() { }
 
   ngOnInit() {
   }
 
 
- menusList:any[]=[  
-	{  
+
+  openMenu(index){
+    console.log("INDEX"+index);
+    var text = "openMe"+index;
+    //var opens = this.openMe[index+1];
+    this.text = !this.text;
+    //this.openMe+[index+1] = !(this.openMe+[index+1]);
+    console.log(text);
+  }
+
+
+
+ menusList:any[]=[
+	{
 	   "name":"Dashboard",
 	   "icon":"fa fa-home",
-	   "children":[  
-		  {  
+	   "children":[
+		  {
 			 "name":"DEFAULT"
 		  },
-		  {  
+		  {
 			 "name":"E-Commerce"
 		  },
-		  {  
+		  {
 			 "name":"Analytics"
 		  }
 	   ]
 	},
-	{  
+	{
 	   "name":"Widgets",
 	   "icon":"fa fa-th",
-	   "children":[  
-		  {  
+	   "children":[
+		  {
 			 "name":"Statistics"
 		  },
-		  {  
+		  {
 			 "name":"Data"
 		  },
-		  {  
+		  {
 			 "name":"Chart"
 		  }
 	   ]
 	},
-	{  
+	{
 	   "name":"Basic",
 	   "icon":"fa fa-th-large",
-	   "children":[  
-		  {  
+	   "children":[
+		  {
 			 "name":"Alert"
 		  },
-		  {  
+		  {
 			 "name":"Button"
 		  },
-		  {  
+		  {
 			 "name":"Accordians"
 		  },
-		  {  
+		  {
 			 "name":"Tabs"
 		  },
-		  {  
+		  {
 			 "name":"Lists"
 		  }
 	   ]
 	},
-	{  
+	{
 	   "name":"Advance",
 	   "icon":"fa fa-sync",
-	   "children":[  
-		  {  
+	   "children":[
+		  {
 			 "name":"Modal"
 		  },
-		  {  
+		  {
 			 "name":"Notification"
 		  },
-		  {  
+		  {
 			 "name":"Sliders"
 		  }
 	   ]
 	},
-	{  
+	{
 	   "name":"Animations",
 	   "icon":"fa fa-sync",
-	   "children":[  
- 
+	   "children":[
+
 	   ]
 	},
-	{  
+	{
 	   "name":"Form",
 	   "icon":"fa fa-sync",
-	   "children":[  
-		  {  
+	   "children":[
+		  {
 			 "name":"Components"
 		  },
-		  {  
+		  {
 			 "name":"Advance"
 		  },
-		  {  
+		  {
 			 "name":"Validation"
 		  }
 	   ]
 	},
-	{  
+	{
 	   "name":"Form Picker",
 	   "icon":"fa fa-sync",
-	   "children":[  
- 
+	   "children":[
+
 	   ]
 	},
-	{  
+	{
 	   "name":"Form Select",
 	   "icon":"fa fa-sync",
-	   "children":[  
- 
+	   "children":[
+
 	   ]
 	},
-	{  
+	{
 	   "name":"Bootstrap Tables",
 	   "icon":"fa fa-sync",
-	   "children":[  
-		  {  
+	   "children":[
+		  {
 			 "name":"Basic Table"
 		  },
-		  {  
+		  {
 			 "name":"Border Table"
 		  }
 	   ]
 	},
-	{  
+	{
 	   "name":"Data Tables",
 	   "icon":"fa fa-sync",
-	   "children":[  
-		  {  
+	   "children":[
+		  {
 			 "name":"Basic Table"
 		  },
-		  {  
+		  {
 			 "name":"Paginig Table"
 		  }
 	   ]
