@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+
+	linkText:any;
   openMe:string;
-  openMe1:boolean = true;
+  openMe1:boolean= false;
+  text:boolean = true;
   constructor() { }
 
   ngOnInit() {
@@ -16,14 +19,15 @@ export class SidebarComponent implements OnInit {
 
 
 
-  openMenu(index){
-    console.log("INDEX"+index);
-    var text = "openMe"+index;
-    //var opens = this.openMe[index+1];
-    this.text = !this.text;
-    //this.openMe+[index+1] = !(this.openMe+[index+1]);
-    console.log(text);
-  }
+  openMenu(event,index){
+	console.log(event);
+	console.log(event.path[2]);
+ var path = event.path[2];
+ path.target.classList.toggle('active');
+	 
+   }
+ 
+ 
 
 
 

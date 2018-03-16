@@ -1,18 +1,15 @@
-  <ul class="sidebar-ul animated fadeInLeft ">
-    <li *ngFor="let parent of menusList;let i = index"
-        class="parent-list"
-         [ngClass]="{'active':openMe+[i+1] === true}"
-        >
-      <a class="plink" (click)="openMenu(i+1)">
-        <span class="picon"><i class="{{parent.icon}}"></i></span>
-        <span class="ptext-link">{{parent.name}}</span>
-      </a>
-      <ul class="side-submenu" >
-        <li *ngFor="let child of parent.children">
-          <a class="clinnk">
-            <span class="sptext-link"> {{child.name}}</span>
-            </a>
-        </li>
-      </ul>
-     </li>
-  </ul>
+<ul class="sidebar-ul animated fadeInLeft " id="accordion">
+    <li *ngFor="let parent of menusList;let i = index" class="parent-list">
+        <a class="plink" id="linkText" data-target="#collapse{{i+1}}">
+            <span class="picon"><i class="{{parent.icon}}"></i></span>
+            <span class="ptext-link">{{parent.name}}</span>
+        </a>
+        <ul class="side-submenu" id="collapse{{i+1}}">
+            <li *ngFor="let child of parent.children">
+                <a class="clinnk">
+                    <span class="sptext-link"> {{child.name}}</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
