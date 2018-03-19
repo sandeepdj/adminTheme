@@ -1,13 +1,17 @@
 $white :#ffffff;
+
+
 $blue: #8c99e0;
 $red:#E44F56;
+
+
 $bgcolor:#f4f6f9;
 $blue1:#448aff;
 
 /* Sidebar and container $blue: #6673FC; */
 
 $swidth: 220px; //sidebar width
-$cwidth: calc(100% - #{$swidth}); //container-width 
+$cwidth: calc(100% - #{$swidth}); //container-width
 $headerHeight :55px; //Header height
 $wh100:100%; //Height or width 100%
 $sheight:100%;

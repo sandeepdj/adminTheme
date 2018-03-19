@@ -2,3 +2,83 @@
     <h4 class="page-title" style="    font-size: 18px;">Dashboard</h4>
     <p>Welcome to Highdmin admin panel !</p>
 </div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+        <div class="card danger-card widget">
+             <div class="card-body">
+              <h5 class="card-title">ORDERS   </h5>
+              <p class="count">2215</p>
+              <i class="fas fa-dollar-sign wicon"></i>
+              </div>
+          </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card warning-card widget">
+            <div class="card-body">
+             <h5 class="card-title">ORDERS   </h5>
+             <p class="count">2215</p>
+             <i class="fas fa-chart-bar wicon"></i>
+             </div>
+         </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card info-card widget">
+              <div class="card-body">
+               <h5 class="card-title">ORDERS   </h5>
+               <p class="count">2215</p>
+               <i class="fas fa-cart-arrow-down wicon"></i>
+               </div>
+           </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card success-card widget">
+                <div class="card-body">
+                 <h5 class="card-title">ORDERS   </h5>
+                 <p class="count">2215</p>
+                 <i class="fas fa-cart-arrow-down wicon"></i>
+                 </div>
+             </div>
+          </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div class="box">
+            <div class="box-header">
+                <h4 class="box-title">Daily revenue recap</h4>
+                <div class="box-tools">
+                  <a class="fa fa-refresh"></a>
+                  <a class="fa fa-minus"></a>
+                </div>
+            </div>
+            <div class="box-body">
+              <div *ngIf="chart">
+                <canvas id="canvas">{{ chart }}</canvas>
+              </div>
+            </div>
+            <div class="box-footer">
+
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="box">
+            <div class="box-header">
+                <h4 class="box-title">Daily revenue recap</h4>
+                <div class="box-tools">
+                  <a class="fa fa-refresh"></a>
+                  <a class="fa fa-minus"></a>
+                </div>
+            </div>
+            <div class="box-body">
+
+            </div>
+            <div class="box-footer">
+
+            </div>
+        </div>
+      </div>
+  </div>
+</div>

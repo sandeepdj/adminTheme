@@ -6,29 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
+  current: number = 0;
 
-
-	linkText:any;
-  openMe:string;
-  openMe1:boolean= false;
-  text:boolean = true;
   constructor() { }
 
   ngOnInit() {
   }
-
-
-
-  openMenu(event,index){
-	console.log(event);
-	console.log(event.path[2]);
- var path = event.path[2];
- path.target.classList.toggle('active');
-	 
-   }
- 
- 
-
 
 
  menusList:any[]=[
@@ -37,28 +20,34 @@ export class SidebarComponent implements OnInit {
 	   "icon":"fa fa-home",
 	   "children":[
 		  {
-			 "name":"DEFAULT"
+       "name":"Home",
+       "url":"Dashboard"
 		  },
 		  {
-			 "name":"E-Commerce"
+       "name":"E-Commerce",
+       "url":"Overview"
 		  },
 		  {
-			 "name":"Analytics"
+       "name":"Analytics",
+       "url":"Analytics"
 		  }
 	   ]
 	},
 	{
-	   "name":"Widgets",
+	   "name":"Masters",
 	   "icon":"fa fa-th",
 	   "children":[
 		  {
-			 "name":"Statistics"
+       "name":"Financial Year",
+       "url":"Financial"
 		  },
 		  {
-			 "name":"Data"
+       "name":"GST Slab",
+       "url":"GSTslab"
 		  },
 		  {
-			 "name":"Chart"
+       "name":"Units",
+       "url":"UnitMaster"
 		  }
 	   ]
 	},

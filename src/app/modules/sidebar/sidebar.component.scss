@@ -26,15 +26,14 @@
 
 .sidebar-ul>li>a {
     text-align: left;
-    padding: 5px 10px;
+    padding: 5px 0px;
     margin: 0 10px;
     border-radius: 5px;
     display: block;
     font-size: 14px;
     text-decoration: none;
     position: relative;
-    transition: all .3s ease-in-out;
-    color: #666!important;
+     color: #666 !important;
 }
 
 .picon {
@@ -64,6 +63,8 @@
     transition: transform .5s, opacity .5s;
     transition: transform .5s, opacity .5s, -webkit-transform .5s;
     background: #fff;
+
+
 }
 
 .side-submenu>li {
@@ -76,34 +77,50 @@
 
 .side-submenu>li>a {
     border-bottom-width: 1px;
-    padding-left: 15px;
     border-bottom-color: #e6e5e5;
-    color: #666;
+    color: rgba(0,0,0,.87);
     text-align: left;
     padding: 7.7px 10px;
+    padding-left: 15px;
     display: block;
     font-size: 14px;
     font-weight: 100;
     text-decoration: none;
     position: relative;
-    transition: all .3s ease-in-out;
+
 }
+
+// .side-submenu>li>a:hover{
+//   color: #8c99e0 !important;
+// }
+.side-submenu>li>a:hover{
+  background: rgba(0,0,0,.12);
+   color: rgba(0,0,0,.87) !important;
+}
+
+.clinnk.active{
+  background: rgba(0,0,0,.12);
+   color: #1976d2 !important;
+  font-weight: 500 !important;
+}
+
 
 .sptext-link {
     transition: all .3s ease-in-out;
 }
 
-.parent-list.active .plink {
-    background-color: #ccc;
-}
 
-// .side-submenu {
-//     display: none;
-// }
+
 .parent-list.active .side-submenu {
     display: block;
 }
-
+//  background-color: #ccc;
 .sidebar-ul>li>a:hover {
-    background-color: #ccc;
+    background: rgba(0,0,0,.12);
 }
+.menu-arrow{
+  float: right;
+  font-size: 18px;
+  padding: 5px 10px 5px 0px;
+}
+

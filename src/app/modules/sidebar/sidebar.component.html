@@ -1,12 +1,15 @@
-<ul class="sidebar-ul animated fadeInLeft " id="accordion">
+<ul class="sidebar-ul" id="accordion">
     <li *ngFor="let parent of menusList;let i = index" class="parent-list">
-        <a class="plink" id="linkText" data-target="#collapse{{i+1}}">
+        <a class="plink" id="linkText" (click) = "current = i">
             <span class="picon"><i class="{{parent.icon}}"></i></span>
-            <span class="ptext-link">{{parent.name}}</span>
+            <span class="ptext-link">{{parent.name}} </span>
+            <i class='menu-arrow fa'
+                [class.fa-angle-right] = "i != current"
+                [class.fa-angle-down] = "i == current" ></i>
         </a>
-        <ul class="side-submenu" id="collapse{{i+1}}">
+        <ul class="side-submenu panel-collapse" id="collapse{{i+1}}" [class.collapse]='current != i' >
             <li *ngFor="let child of parent.children">
-                <a class="clinnk">
+                <a class="clinnk" routerLink="{{child.url}}" routerLinkActive="active">
                     <span class="sptext-link"> {{child.name}}</span>
                 </a>
             </li>

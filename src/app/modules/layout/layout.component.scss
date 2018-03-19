@@ -4,6 +4,20 @@
     position: relative;
     width: 100%;
 }
+.container-wrap, .router-content, .header{
+  -moz-transition: .5s;
+    -o-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.sidebar-wrap{
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 
 .sidebar-open {
     .sidebar-wrap {
@@ -15,6 +29,9 @@
     }
     .header{
       width: $cwidth;
+    }
+    .router-content{
+      width: $sdbarheight;
     }
 }
 
@@ -28,6 +45,9 @@
         margin-left: 0px;
     }
     .header{
+      width: $wh100;
+    }
+    .router-content{
       width: $wh100;
     }
 }
@@ -44,7 +64,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     position: fixed;
-    width: 100%;
+
     margin-top: 55px;
     padding: 10px;
 }
