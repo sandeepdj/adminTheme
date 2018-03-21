@@ -1,5 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -18,7 +20,7 @@ import { WeatherService } from './services/chart/weather.service';
 import { FinancialComponent } from './modules/financial/financial.component';
 import { GstmasterComponent } from './modules/gstmaster/gstmaster.component';
 import { UnitmasterComponent } from './modules/unitmaster/unitmaster.component';
-
+import { MaterialModule } from './app.material';
 
 @NgModule({
   declarations: [
@@ -34,11 +36,13 @@ import { UnitmasterComponent } from './modules/unitmaster/unitmaster.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
     CommonModule,
-    DataTableModule
+    DataTableModule,
+    MaterialModule
 
   ],
   providers: [WeatherService],

@@ -6,6 +6,7 @@ font-family: 'Roboto', sans-serif;
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~variables.scss';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 html,
 body {
     width: 100%;
@@ -21,7 +22,7 @@ body {
     font-weight: 500;
 }
 
-.box{
+.box {
     position: relative;
     float: left;
     width: 100%;
@@ -31,69 +32,74 @@ body {
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
     background-color: #fff;
-    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
-}
-.box-header{
-  position: relative;
-  float: left;
-  width: 100%;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-.box-header .box-title{
-  position: relative;
-  float: left;
-  font-size: 16px;
-}
-.box-tools{
-  float: right;
-  color: #cfcfcf;
-}
-.box-primary{
-  border-color: blue;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
 }
 
+.box-header {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
 
+.box-header .box-title {
+    position: relative;
+    float: left;
+    font-size: 16px;
+}
 
+.box-tools {
+    float: right;
+    color: #cfcfcf;
+}
 
-
-
-
+.box-primary {
+    border-color: blue;
+}
 
 
 /*********** WIDGET ****************/
-.danger-card{
-  background: #dc143c;
-  border-color: #dc143c;
+
+.danger-card {
+    background: #dc143c;
+    border-color: #dc143c;
 }
-.warning-card{
-  background: #ff8c00;
-  border-color: #ff8c00;
+
+.warning-card {
+    background: #ff8c00;
+    border-color: #ff8c00;
 }
-.info-card{
-  background: #00bfff;
-  border-color: #00bfff;
+
+.info-card {
+    background: #00bfff;
+    border-color: #00bfff;
 }
-.success-card{
-  background: green;
-  border-color: green;
+
+.success-card {
+    background: green;
+    border-color: green;
 }
-.count{
-  font-size: 32px;
+
+.count {
+    font-size: 32px;
 }
-.widget{
-  color: #fff;
+
+.widget {
+    color: #fff;
 }
-.widget .card-title{
-  font-size: 14px;
-  margin-bottom: 0px;
+
+.widget .card-title {
+    font-size: 14px;
+    margin-bottom: 0px;
 }
-.wicon{
-  color: hsla(0,0%,100%,.2);
-  font-size: 60px;
-  height: auto;
-  position: absolute;
-  right: 1.5714286rem;
-  top: 1.5714286rem;
-  width: auto;
+
+.wicon {
+    color: hsla(0, 0%, 100%, .2);
+    font-size: 60px;
+    height: auto;
+    position: absolute;
+    right: 1.5714286rem;
+    top: 1.5714286rem;
+    width: auto;
 }
